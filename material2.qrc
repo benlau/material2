@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/qt-project.org/imports">
+        <file>Material2/Ink.qml</file>
+        <file>Material2/InkButton.qml</file>
+        <file>Material2/qmldir</file>
+        <file>Material2/RippleSurface.qml</file>
+    </qresource>
+</RCC>
