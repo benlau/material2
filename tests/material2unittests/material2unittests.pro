@@ -12,13 +12,15 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 
-SOURCES +=     main.cpp     tests.cpp
+SOURCES +=     main.cpp    
 
 DEFINES += SRCDIR=\\\"$$PWD/\\\" QUICK_TEST_SOURCE_DIR=\\\"$$PWD/qmltests\\\"
 
 include(vendor/vendor.pri)
+include(../../material2.pri)
 
-DISTFILES +=     qpm.json     qmltests/tst_QmlTests.qml
+DISTFILES +=     qpm.json     qmltests/tst_QmlTests.qml \
+    mockup/mockup_Shadow.qml
 
-HEADERS +=     tests.h
+HEADERS +=    
 

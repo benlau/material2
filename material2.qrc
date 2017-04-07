@@ -4,5 +4,7 @@
         <file>Material2/InkButton.qml</file>
         <file>Material2/qmldir</file>
         <file>Material2/RippleSurface.qml</file>
+        <file>Material2/MaterialShadow.qml</file>
+        <file>Material2/Shadow.qml</file>
     </qresource>
 </RCC>

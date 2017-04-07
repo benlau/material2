@@ -1,6 +1,5 @@
 // Create shadow defined by Google's Material Design
 import QtQuick 2.0
-import QuickAndroid 0.1
 
 Item {
     id : shadow
@@ -14,22 +13,21 @@ Item {
     function _setImageShadow() {
         if (shader)
             return;
-
-        var url = Qt.resolvedUrl("drawable/ArtShadowDepth" + depth + ".qml");
-        drawable.source = url;
+//        var url = Qt.resolvedUrl("drawable/ArtShadowDepth" + depth + ".qml");
+//        drawable.source = url;
     }
 
     onDepthChanged: {
         _setImageShadow();
     }
 
-    Drawable {
+    Item {
         id : drawable
         anchors.fill: parent
-        anchors.leftMargin: -fillArea.x
-        anchors.rightMargin: -fillArea.rightMargin
-        anchors.topMargin: -fillArea.y
-        anchors.bottomMargin: -fillArea.bottomMargin
+//        anchors.leftMargin: -fillArea.x
+//        anchors.rightMargin: -fillArea.rightMargin
+//        anchors.topMargin: -fillArea.y
+//        anchors.bottomMargin: -fillArea.bottomMargin
     }
 
     Loader {
@@ -77,17 +75,17 @@ Item {
 
             PropertyChanges {
                 target: topShadow
-                verticalOffset : 1 * A.dp
+                verticalOffset : 1
                 horizontalOffset: 0
                 opacity: 0.12
-                blur : 1.5 * A.dp
+                blur : 1.5
             }
 
             PropertyChanges {
                 target: bottomShadow
-                verticalOffset : 1 * A.dp
+                verticalOffset : 1
                 horizontalOffset: 0
-                blur : 1 * A.dp
+                blur : 1
                 opacity: 0.24
             }
 
@@ -98,17 +96,17 @@ Item {
 
             PropertyChanges {
                 target: topShadow
-                verticalOffset : 3 * A.dp
+                verticalOffset : 3
                 horizontalOffset: 0
-                blur : 3 * A.dp
+                blur : 3
                 opacity: 0.16
             }
 
             PropertyChanges {
                 target: bottomShadow
-                verticalOffset : 3 * A.dp
+                verticalOffset : 3
                 horizontalOffset: 0
-                blur : 3 * A.dp
+                blur : 3
                 opacity: 0.23
             }
         },
@@ -118,17 +116,17 @@ Item {
 
             PropertyChanges {
                 target: topShadow
-                verticalOffset : 10 * A.dp
+                verticalOffset : 10
                 horizontalOffset: 0
-                blur : 10 * A.dp
+                blur : 10
                 opacity: 0.19
             }
 
             PropertyChanges {
                 target: bottomShadow
-                verticalOffset : 6 * A.dp
+                verticalOffset : 6
                 horizontalOffset: 0
-                blur : 3 * A.dp
+                blur : 3
                 opacity: 0.23
             }
         },
@@ -139,17 +137,17 @@ Item {
 
             PropertyChanges {
                 target: topShadow
-                verticalOffset : 14 * A.dp
+                verticalOffset : 14
                 horizontalOffset: 0
-                blur : 14 * A.dp
+                blur : 14
                 opacity: 0.25
             }
 
             PropertyChanges {
                 target: bottomShadow
-                verticalOffset : 10 * A.dp
+                verticalOffset : 10
                 horizontalOffset: 0
-                blur : 5 * A.dp
+                blur : 5
                 opacity: 0.22
             }
         },
@@ -159,17 +157,17 @@ Item {
 
             PropertyChanges {
                 target: topShadow
-                verticalOffset : 19 * A.dp
+                verticalOffset : 19
                 horizontalOffset: 0
-                blur : 19 * A.dp
+                blur : 19
                 opacity: 0.30
             }
 
             PropertyChanges {
                 target: bottomShadow
-                verticalOffset : 15 * A.dp
+                verticalOffset : 15
                 horizontalOffset: 0
-                blur : 6 * A.dp
+                blur : 6
                 opacity: 0.22
             }
         }

@@ -5,7 +5,6 @@
 #include <unistd.h>
 #include <TestRunner>
 #include <QtQuickTest>
-#include "tests.h"
 
 void handleBacktrace(int sig) {
     void *array[100];
@@ -33,7 +32,6 @@ int main(int argc, char *argv[])
 
     TestRunner runner;
     runner.addImportPath("qrc:///");
-    runner.add<Tests>();
     runner.add(QString(SRCDIR) + "qmltests");
 
     bool error = runner.exec(app.arguments());
