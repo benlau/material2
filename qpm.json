@@ -1,0 +1,22 @@
+{
+  "name": "net.efever.material2",
+  "description": "Lightweight Material Design Component Library(expermential)",
+  "author": {
+    "name": "Ben Lau",
+    "email": "xbenlau@gmail.com"
+  },
+  "repository": {
+    "type": "GITHUB",
+    "url": "git@github.com:benlau/material2.git"
+  },
+  "version": {
+    "label": "0.0.1",
+    "revision": "",
+    "fingerprint": ""
+  },
+  "dependencies": [
+  ],
+  "license": "APACHE_2_0",
+  "pri_filename": "material2.pri",
+  "webpage": ""
+}
